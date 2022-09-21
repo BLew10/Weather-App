@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather APp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <h1 class="nav-title">DojoWeather</h1>
+        <ul class="nav-links">
+            <li><a href="#" onclick = "alert('Burbank data is currently unavailable..')">Burbank</a></li>
+            <li><a href="#" onclick = "alert('Chicago data is currently unavailable..')" >Chicago</a></li>
+            <li><a href="#" onclick = "alert('Dallas data is currently unavailable..')">Dallas</a></li>
+        </ul>
+    </div>
+    <div class='current'>
+        <h1>San Jose</h1>
+        <div class="temp-show"><span>show temperature in</span>
+            <select name="" id="temp-options" onchange="change(), alert('Loading weather report...')">
+                <option value="fahrenheit">&#8457</option>
+                <option value="celsius">&#8451</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="weather-content">
+        <div class="weather-display">
+            <h2>Today</h2>
+            <img src="some_rain.png" alt="">
+            <p>some rain</p>
+            <div class="temp">
+                <p class="high" id="high-today">69&#8457</p>
+                <p class="low" id="low-today">44&#8457</p>
+            </div>
+        </div>
+        <div class="weather-display">
+            <h2>Today</h2>
+            <img src="some_sun.png" alt="">
+            <p>some sun</p>
+            <div class="temp">
+                <p class="high" id="high-tom">90&#8457</p>
+                <p class="low" id="low-tom">63&#8457</p>
+            </div>
+        </div>
+        <div class="weather-display">
+            <h2>Today</h2>
+            <img src="some_sun.png" alt="">
+            <p>some sun</p>
+            <div class="temp">
+                <p class="high" id="high-3">87&#8457</p>
+                <p class="low" id="low-3">55&#8457</p>
+            </div>
+        </div>
+        <div class="weather-display">
+            <h2>Today</h2>
+            <img src="some_clouds.png" alt="">
+            <p>some clouds</p>
+            <div class="temp">
+                <p class="high" id="high-4">78&#8457</p>
+                <p class="low" id="low-4">50&#8457</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookies">
+        <img src="cookie.png" alt="">
+        <div class="cookie-message">
+            <h2>Stop! Cookie Time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                features and to analyse our traffic. <a href="">Read More...</a></p>
+        </div>
+        <button id="accept" onclick="removeCookies()">I Accept</button>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
